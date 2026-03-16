@@ -43,7 +43,10 @@ A **random agent** is implemented to interact with MiniGrid.
 
 The agent selects actions uniformly at random without using any knowledge about the environment. Although simple, this agent serves as a **baseline** for comparing the performance of more intelligent agents later.
 
-Total Reward: -1.780859375
+
+> **Evaluation Results:**
+> - **Total Reward:** `-1.780859375`
+
 ![Random agent](demo/Random_agent.gif)
 
 ---
@@ -54,7 +57,9 @@ A **rule-based agent** is then implemented using simple heuristics.
 
 Compared with the random agent, it demonstrates how prior knowledge about the environment can improve performance. At the same time, it also shows the limitations of manually designed strategies.
 
-Total Reward: 0.694140625
+> **Evaluation Results:**
+> - **Total Reward:** `0.694140625`
+
 ![Rule_based](demo/Rule_based.gif)
 
 ---
@@ -80,7 +85,9 @@ Key ideas introduced in this section include:
 
 The agent is first trained in the **MiniGrid-Empty-8x8** environment.
 
-Total Reward: 0.9578125
+> **Evaluation Results:**
+> - **Total Reward:** `0.9578125`
+
 ![Value_based](demo/Value_based.gif)
 
 ---
@@ -91,7 +98,9 @@ This section introduces **tabular policy learning**, where the agent learns a po
 
 Unlike value-based methods, policy-based learning represents **action probabilities explicitly**, allowing the agent to behave stochastically and adapt its action distribution during learning.
 
-Total Reward: 0.8734375
+> **Evaluation Results:**
+> - **Total Reward:** `0.8734375`
+
 ![Policy_based](demo/Policy_based.gif)
 
 ---
@@ -104,7 +113,9 @@ Because the environment contains **sparse rewards**, learning becomes difficult.
 
 Reward shaping helps accelerate learning and improves training stability.
 
-Total Reward: 0.9409375
+> **Evaluation Results:**
+> - **Total Reward:** `0.9409375`
+
 ![Reward Shaping](demo/reward_shaping.gif)
 
 ---
@@ -137,7 +148,9 @@ A softmax policy converts action preferences into probabilities, allowing the ag
 
 This section highlights the conceptual difference between **learning value functions** and **learning policies directly**.
 
-Total Reward: 0.961328125
+> **Evaluation Results:**
+> - **Total Reward:** `0.961328125`
+
 ![pytorch_policy](demo/pytorch_policy.gif)
 
 ---
